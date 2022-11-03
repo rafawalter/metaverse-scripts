@@ -1,0 +1,1 @@
+exiftool -ProjectionType=equirectangular -UsePanoramaViewer=True $1

@@ -1,0 +1,1 @@
+exiftool -ProjectionType -UsePanoramaViewer $1
