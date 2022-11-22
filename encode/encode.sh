@@ -10,11 +10,11 @@ export extension="${input##*.}"
 # exit
 
 HandBrakeCLI \
-  --optimize\
-  --two-pass\
-  --turbo\
-  --vb\
   -w $width\
   -l $height\
   -i $input\
-  -o "$filename.${width}x${height}.$extension"
+  -o "$filename.${width}x${height}.$extension"\
+  # --optimize\
+  # --two-pass\
+  # --turbo\
+  # --vb\
