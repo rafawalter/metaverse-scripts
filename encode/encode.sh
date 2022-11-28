@@ -9,12 +9,14 @@ export extension="${input##*.}"
 # echo $filename $extension
 # exit
 
-HandBrakeCLI \
+time (
+  HandBrakeCLI \
   -w $width\
   -l $height\
   -i $input\
   -o "$filename.${width}x${height}.$extension"\
-  # --optimize\
-  # --two-pass\
-  # --turbo\
+  --optimize\
+  --two-pass\
+  --turbo\
   # --vb\
+)
